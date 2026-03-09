@@ -159,7 +159,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 3.4
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   rb: {fileID: 73946379}
   isLanded: 1
-  jumpForce: 8
+  jumpForce: 12
 --- !u!4 &227109774 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9069220742252775294, guid: 9de99c90826a54720b9847a2060e96ed, type: 3}
@@ -319,6 +319,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 460473930}
     m_Modifications:
+    - target: {fileID: 1746654105029377722, guid: 56e3d78d3a79448b19bc0121ee04e716, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3428727115699091274, guid: 56e3d78d3a79448b19bc0121ee04e716, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.7048702
@@ -414,6 +418,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 460473930}
     m_Modifications:
+    - target: {fileID: 1746654105029377722, guid: 56e3d78d3a79448b19bc0121ee04e716, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3428727115699091274, guid: 56e3d78d3a79448b19bc0121ee04e716, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.8548539
@@ -1228,6 +1236,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 460473930}
     m_Modifications:
+    - target: {fileID: 1746654105029377722, guid: 56e3d78d3a79448b19bc0121ee04e716, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3428727115699091274, guid: 56e3d78d3a79448b19bc0121ee04e716, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.36

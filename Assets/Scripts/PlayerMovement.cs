@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isLanded)
+        if (Input.GetKey(KeyCode.Space) && isLanded)
         {
             Jump();
             isLanded = false;
