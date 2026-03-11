@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     void Jump()
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        //how tf do u flip
+      
     }
 
     void OnCollisionStay2D(Collision2D collision)
