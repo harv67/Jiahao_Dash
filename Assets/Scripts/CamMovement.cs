@@ -3,9 +3,9 @@ using UnityEngine;
 public class TriggerCam : MonoBehaviour
 {
     [SerializeField] Transform player;
-    [SerializeField] float LevelTrigger = 1f;
+    [SerializeField] float LevelTrigger = 1.3f;
     private float LowLevel = 0f;
-    private float HighLevel = 1f;
+    private float HighLevel = 3.5f;
     [SerializeField] float smoothSwitch = 3f;
     
 
