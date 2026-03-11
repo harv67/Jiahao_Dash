@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
+    public AudioSource backgroundMusic;
     public GameObject pauseMenuUI; 
     private bool isPaused = false;
 
@@ -21,6 +22,7 @@ public class PauseManager : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;         
         isPaused = true;
+        backgroundMusic.Pause();
     }
 
  
@@ -29,6 +31,7 @@ public class PauseManager : MonoBehaviour
         pauseMenuUI.SetActive(false); 
         Time.timeScale = 1f;         
         isPaused = false;
+        backgroundMusic.UnPause();
     }
 
   
