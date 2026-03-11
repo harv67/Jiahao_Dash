@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         //how tf do u flip
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Land"))
         {

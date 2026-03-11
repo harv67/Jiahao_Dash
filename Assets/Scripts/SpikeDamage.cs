@@ -8,8 +8,8 @@ public class SpikeDamage : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("you are dead");
-            Time.timeScale = 1f;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            // Time.timeScale = 1f;
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
