@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         // rotation if possible if not its okay
+        float direction = Mathf.Sign(rb.gravityScale);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce * direction);      
     }
 
     void OnCollisionStay2D(Collision2D collision)
