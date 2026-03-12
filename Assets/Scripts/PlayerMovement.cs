@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-      
+        float direction = Mathf.Sign(rb.gravityScale);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce * direction);      
     }
 
     void OnCollisionStay2D(Collision2D collision)
