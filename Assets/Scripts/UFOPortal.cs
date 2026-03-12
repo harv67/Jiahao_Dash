@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class PortalToWave : MonoBehaviour
+public class UFOPortal : MonoBehaviour
 {
-    [Header("Wave GameObject in Scene")]
-    public GameObject waveObject; // your wave
+    [Header("UFO GameObject in Scene")]
+    public GameObject UFOObject; // your ufo
 
     [Header("Player Components")]
     public SpriteRenderer playerSprite;
@@ -11,10 +11,10 @@ public class PortalToWave : MonoBehaviour
     public Rigidbody2D playerRigidbody;
     public MonoBehaviour[] playerScripts; // all scripts controlling player behavior
 
-    [Header("Wave Components")]
-    public MonoBehaviour[] waveScripts; // scripts that control the wave
-    public Collider2D waveCollider;
-    public Rigidbody2D waveRigidbody;
+    [Header("UFO Components")]
+    public MonoBehaviour[] UFOScripts; // scripts that control the ufo
+    public Collider2D UFOCollider;
+    public Rigidbody2D UFORigidbody;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -31,19 +31,19 @@ public class PortalToWave : MonoBehaviour
             foreach (MonoBehaviour script in playerScripts)
                 script.enabled = false;
 
-            // --- Enable wave ---
-            waveObject.SetActive(true);
-            waveObject.transform.position = other.transform.position;
+            // --- Enable ufo ---
+            UFOObject.SetActive(true);
+            UFOObject.transform.position = other.transform.position;
 
-            FindFirstObjectByType<TriggerCam>().SetTarget(waveObject.transform);
+            FindFirstObjectByType<TriggerCam>().SetTarget(UFOObject.transform);
 
-            if (waveRigidbody != null)
+            if (UFORigidbody != null)
             {
-                waveRigidbody.simulated = true;
-                waveRigidbody.linearVelocity = Vector2.zero;
+                UFORigidbody.simulated = true;
+                UFORigidbody.linearVelocity = Vector2.zero;
             }
-            if (waveCollider != null) waveCollider.enabled = true;
-            foreach (MonoBehaviour script in waveScripts)
+            if (UFOCollider != null) UFOCollider.enabled = true;
+            foreach (MonoBehaviour script in UFOScripts)
                 script.enabled = true;
         }
     }
