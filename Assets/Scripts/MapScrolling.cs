@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MapScrolling : MonoBehaviour
 {
-    [SerializeField] float speed = 5f;
+    [SerializeField] public float speed = 5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
