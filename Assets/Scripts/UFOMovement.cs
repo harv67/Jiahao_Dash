@@ -15,7 +15,7 @@ public class UFOMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }
