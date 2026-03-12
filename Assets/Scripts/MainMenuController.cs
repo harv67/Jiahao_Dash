@@ -7,4 +7,9 @@ public class MainMenuController : MonoBehaviour
     {
         SceneManager.LoadScene("PlayScene");
     }
+
+    public void ShopButton()
+    {
+        SceneManager.LoadScene("ShopScene");
+    }
 }

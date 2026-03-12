@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     void Jump()
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-      
+        // rotation if possible if not its okay
     }
 
     void OnCollisionStay2D(Collision2D collision)
