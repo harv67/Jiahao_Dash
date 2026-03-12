@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class TriggerCam : MonoBehaviour
 {
-    [SerializeField] Transform player;
-    [SerializeField] float LevelTrigger = 1.3f;
+    [SerializeField] Transform target;
+    [SerializeField] float LevelTrigger = 0.9f;
     private float LowLevel = 0f;
     private float HighLevel = 3.5f;
     [SerializeField] float smoothSwitch = 3f;
@@ -11,7 +11,7 @@ public class TriggerCam : MonoBehaviour
 
     void Update()
     {
-        float playerY = player.position.y;
+        float playerY = target.position.y;
 
         if (playerY > LevelTrigger)
         {
@@ -25,6 +25,11 @@ public class TriggerCam : MonoBehaviour
         }
        
     
+    }
+
+    public void SetTarget(Transform newTarget)
+    {
+        target = newTarget;
     }
 
 }

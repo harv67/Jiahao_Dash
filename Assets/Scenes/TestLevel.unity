@@ -506,7 +506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3428727115699091274, guid: 56e3d78d3a79448b19bc0121ee04e716, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.82
+      value: 3.8418186
       objectReference: {fileID: 0}
     - target: {fileID: 3428727115699091274, guid: 56e3d78d3a79448b19bc0121ee04e716, type: 3}
       propertyPath: m_LocalPosition.x
@@ -514,7 +514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3428727115699091274, guid: 56e3d78d3a79448b19bc0121ee04e716, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.26
+      value: 4.3137
       objectReference: {fileID: 0}
     - target: {fileID: 3428727115699091274, guid: 56e3d78d3a79448b19bc0121ee04e716, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1370,7 +1370,7 @@ Transform:
   m_GameObject: {fileID: 344112053}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 167.56, y: -2.45, z: 0}
+  m_LocalPosition: {x: 171.27, y: -0.86, z: 0}
   m_LocalScale: {x: 0.45, y: 0.45, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3877,7 +3877,7 @@ GameObject:
   - component: {fileID: 1071936508}
   m_Layer: 0
   m_Name: Wave_Jiahao_0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6430,13 +6430,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WavePortal
   waveObject: {fileID: 1071936507}
-  playerSprite: {fileID: 0}
-  playerCollider: {fileID: 0}
-  playerRigidbody: {fileID: 0}
+  playerSprite: {fileID: 344112057}
+  playerCollider: {fileID: 344112055}
+  playerRigidbody: {fileID: 344112056}
   playerScripts: []
   waveScripts: []
-  waveCollider: {fileID: 0}
-  waveRigidbody: {fileID: 0}
+  waveCollider: {fileID: 1071936510}
+  waveRigidbody: {fileID: 1071936508}
 --- !u!1 &1615014678
 GameObject:
   m_ObjectHideFlags: 0
@@ -7253,7 +7253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d079dc60a2f44e6d88bf607399b29d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerCam
-  player: {fileID: 344112058}
+  target: {fileID: 344112058}
   LevelTrigger: 1
   smoothSwitch: 5
 --- !u!114 &1989900062
@@ -7368,7 +7368,7 @@ Transform:
   m_GameObject: {fileID: 1989900060}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 171.98, y: 0.65, z: -10}
+  m_LocalPosition: {x: 171.98, y: 1.91, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
