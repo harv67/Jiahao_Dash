@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class SpeedPortal : MonoBehaviour
+public class DefaultSpeedPortal : MonoBehaviour
 {
-    public float newSpeed = 20f;
+    public float returnSpeed = 5f;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -12,7 +12,7 @@ public class SpeedPortal : MonoBehaviour
 
             if (scroller != null)
             {
-                scroller.speed = newSpeed;
+                scroller.speed = returnSpeed;
             }
         }
     }
