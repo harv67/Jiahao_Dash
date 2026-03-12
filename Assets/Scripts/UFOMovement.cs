@@ -9,7 +9,7 @@ public class UFOMovement : MonoBehaviour
     void Start()
     {
         rb.freezeRotation = true;
-        rb.gravityScale = 5;
+        rb.gravityScale = 3;
 
     }
 
