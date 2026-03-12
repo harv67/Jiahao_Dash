@@ -40,4 +40,8 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
+    public void Mainmenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
