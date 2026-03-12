@@ -35,6 +35,8 @@ public class PortalToWave : MonoBehaviour
             waveObject.SetActive(true);
             waveObject.transform.position = other.transform.position;
 
+            FindObjectOfType<TriggerCam>().SetTarget(waveObject.transform);
+
             if (waveRigidbody != null)
             {
                 waveRigidbody.simulated = true;
