@@ -42,7 +42,7 @@ public class MoneyManager : MonoBehaviour
         return true;
     }
 
-    private void RefreshUI()
+    public void RefreshUI()
     {
         CoinDisplay.text = $"{Coin}";
     }
