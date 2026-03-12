@@ -5,7 +5,7 @@ public class ShopButton : MonoBehaviour
 {
     void Start()
     {
-        MoneyManager.Instance.RefreshUI();
+    
     }
     public void BackButton()
     {

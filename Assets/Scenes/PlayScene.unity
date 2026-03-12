@@ -8962,7 +8962,7 @@ Transform:
   m_GameObject: {fileID: 1000052750}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.64, y: -1.9326401, z: 0}
+  m_LocalPosition: {x: 19.09, y: -0.9, z: 0}
   m_LocalScale: {x: 0.05887719, y: 0.050888497, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11698,7 +11698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1417639772}
-  - component: {fileID: 1417639771}
+  - component: {fileID: 1417639773}
   m_Layer: 0
   m_Name: CoinUI
   m_TagString: Untagged
@@ -11706,18 +11706,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1417639771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417639770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bca7017ae293e4e60a517be5f4b1f9d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoinUI
 --- !u!4 &1417639772
 Transform:
   m_ObjectHideFlags: 0
@@ -11733,6 +11721,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1417639773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417639770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca7017ae293e4e60a517be5f4b1f9d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinUI
+  coinText: {fileID: 1095609883}
 --- !u!1001 &1425545931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15755,7 +15756,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1898553916}
-  - component: {fileID: 1898553915}
+  - component: {fileID: 1898553917}
   m_Layer: 0
   m_Name: MoneyManager
   m_TagString: Untagged
@@ -15763,20 +15764,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1898553915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898553914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba68d83a5b7ee4d7dab4e1934197f4fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoneyManager
-  Coin: 0
-  CoinDisplay: {fileID: 1095609883}
 --- !u!4 &1898553916
 Transform:
   m_ObjectHideFlags: 0
@@ -15792,6 +15779,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1898553917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898553914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba68d83a5b7ee4d7dab4e1934197f4fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoneyManager
+  Coin: 0
 --- !u!1001 &1905843263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17412,7 +17412,7 @@ Transform:
   m_GameObject: {fileID: 2115040439}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7894, y: -1.9326401, z: 0}
+  m_LocalPosition: {x: 0.02, y: -0.52, z: 0}
   m_LocalScale: {x: 0.05887719, y: 0.050888497, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

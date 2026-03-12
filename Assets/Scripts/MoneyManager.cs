@@ -6,10 +6,7 @@ public class MoneyManager : MonoBehaviour
     public static MoneyManager Instance;
 
     [Header("Money")]
-    [SerializeField] private int Coin = 0;
-
-    [Header("UI")]
-    [SerializeField] private TMP_Text CoinDisplay;
+    [SerializeField] public int Coin = 0;
 
     void Awake()
     {
@@ -27,7 +24,6 @@ public class MoneyManager : MonoBehaviour
     public void GainMoney()
     {
         Coin += 1;
-        RefreshUI();
     }
 
     public bool TrySpend(int amount)
@@ -38,12 +34,6 @@ public class MoneyManager : MonoBehaviour
         }
 
         Coin -= amount;
-        RefreshUI();
         return true;
-    }
-
-    public void RefreshUI()
-    {
-        CoinDisplay.text = $"{Coin}";
     }
 }

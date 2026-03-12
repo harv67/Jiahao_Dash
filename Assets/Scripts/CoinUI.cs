@@ -1,16 +1,12 @@
 using UnityEngine;
+using TMPro;
 
 public class CoinUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        MoneyManager.Instance.RefreshUI();
-    }
+    [SerializeField] TMP_Text coinText;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        coinText.text = MoneyManager.Instance.Coin.ToString();
     }
 }
