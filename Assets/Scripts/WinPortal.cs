@@ -10,6 +10,10 @@ public class VictoryPortal : MonoBehaviour
         {
             winManager.ShowVictory();
             Debug.Log("Level Complete!");
+            ShopManager.jumpBoost = 0;
+            ShopManager.extraLife = 0;
+            ShopManager.coinMultiplier = 0;
+
         }
     }
 }
