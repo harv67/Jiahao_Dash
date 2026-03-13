@@ -12,6 +12,7 @@ public class MapScrolling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //levels moving left!!!
         transform.position += Vector3.left * speed * Time.deltaTime;
 

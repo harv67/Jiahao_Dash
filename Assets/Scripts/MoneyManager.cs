@@ -6,7 +6,7 @@ public class MoneyManager : MonoBehaviour
     public static MoneyManager Instance;
 
     [Header("Money")]
-    [SerializeField] public int Coin = 0;
+    [SerializeField] private int Coin = 0;
 
     void Awake()
     {
@@ -21,9 +21,9 @@ public class MoneyManager : MonoBehaviour
         }
     }
 
-    public void GainMoney()
+    public void GainMoney(int amount = 1)
     {
-        Coin += 1;
+        Coin += amount;
     }
 
     public bool TrySpend(int amount)
@@ -35,5 +35,10 @@ public class MoneyManager : MonoBehaviour
 
         Coin -= amount;
         return true;
+    }
+
+    public int GetCoin()
+    {
+        return this.Coin;
     }
 }

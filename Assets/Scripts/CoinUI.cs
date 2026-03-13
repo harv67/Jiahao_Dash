@@ -7,6 +7,6 @@ public class CoinUI : MonoBehaviour
 
     void Update()
     {
-        coinText.text = MoneyManager.Instance.Coin.ToString();
+        coinText.text = MoneyManager.Instance.GetCoin().ToString();
     }
 }
