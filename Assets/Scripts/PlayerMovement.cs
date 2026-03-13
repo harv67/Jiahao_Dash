@@ -4,13 +4,17 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     private bool isLanded = true;
-    [SerializeField] float jumpForce = 5f;
+    [SerializeField] public float jumpForce = 5f;
 
 
     void Start()
     {
-        
+        if (ShopManager.jumpBoost > 0)
+        {
+            jumpForce += 5f;
+        }
     }
+
 
     void Update()
     {
