@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (ShopManager.jumpBoost > 0)
         {
-            jumpForce += 5f;
+            jumpForce += 15f;
         }
     }
 
