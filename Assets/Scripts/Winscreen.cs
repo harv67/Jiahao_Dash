@@ -25,4 +25,9 @@ public class WinScreen : MonoBehaviour
 
         Debug.Log("Quit button pressed!");
     }
+    public void ShowVictory()
+    {
+        winUI.SetActive(true);
+        Time.timeScale = 0f;
+    }
 }
